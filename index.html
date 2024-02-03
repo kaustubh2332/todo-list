@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Set character encoding and viewport for responsiveness -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page title -->
+    <title>Todo List</title>
+    <!-- Link to external stylesheet for styling -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to the Remix Icon library for icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Todo List container -->
+    <div id="todo-container">
+      <!-- Todo List header with input and add icon -->
+      <div id="todo-header">
+        <!-- Checkmark icon for header -->
+        <i class="ri-file-check-line"></i>
+        <!-- Input field for adding new tasks -->
+        <input type="text" id="todo-input" placeholder="Type your Todo list" />
+        <!-- Add icon to add new task -->
+        <i class="ri-add-circle-line" id="addTodo" style="cursor: pointer"></i>
+      </div>
+      <!-- Todo List body with unordered list for tasks -->
+      <div id="todo-body">
+        <ul id="todo-list"></ul>
+      </div>
+      <!-- Todo List footer for displaying the total number of tasks -->
+      <div id="todo-footer"><span id="total-tasks">0</span> tasks left</div>
+    </div>
+    <!-- JavaScript file for handling Todo List functionality -->
+    <script src="script.js"></script>
+  </body>
+</html>

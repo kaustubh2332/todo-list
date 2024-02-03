@@ -1,0 +1,105 @@
+/* Apply styles to all elements, ensuring box-sizing is set to border-box */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set full height and width for the HTML and body, and center their content */
+html, body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #D4D6DD;
+}
+
+/* Styling for the main todo container */
+#todo-container {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: white;
+  padding: 2%;
+}
+
+/* Styling for input elements */
+input {
+  border: none;
+  background-color: #EEEEEE;
+}
+
+/* Specific styling for the todo-input element */
+input #todo-input {
+  height: 40px;
+  width: 90%;
+  margin: 2px;   
+}
+
+/* Remove focus outline for input and textarea elements */
+textarea:focus, input:focus {
+  outline: none;
+}
+
+/* Styling for the todo header */
+#todo-header {
+  background-color: #EEEEEE;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-around;
+}
+
+/* Styling for the todo list */
+#todo-list {
+  list-style: none;
+  padding: 0;
+  overflow: scroll;
+  height: 170px;
+}
+
+/* Styling for each todo item */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Styling for the checkbox in todo items */
+.todo-item input[type="checkbox"] {
+  margin: 0px;
+}
+
+/* Styling for the todo footer */
+#todo-footer {
+  padding: 10px;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+/* Styling for buttons with class 'btn' */
+.btn {
+  height: fit-content;
+}
+
+/* Styling for the close icon */
+.ri-close-circle-line {
+  cursor: pointer;
+  font-size: 10px;
+  text-align: right;
+}
+
+/* Styling for completed todo items */
+.completed span {
+  text-decoration: line-through;
+}
+
+/* Styling for icons */
+i {
+  font-size: 30px;
+}
